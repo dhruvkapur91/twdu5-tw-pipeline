@@ -18,6 +18,7 @@ lazy val root = (project in file(".")).
       "org.apache.spark" %% "spark-streaming" % sparkVersion,
       "com.typesafe" % "config" % "1.3.2",
       "org.scalatest" %% "scalatest" % "3.0.5" % "test",
+      "org.apache.spark" %% "spark-core" % "2.4.0" % Test classifier "tests",
       "org.apache.spark" %% "spark-sql" % "2.4.0" % Test classifier "tests",
       "org.apache.spark" %% "spark-catalyst" % "2.4.0" % "provided",
       "org.apache.spark" %% "spark-catalyst" % "2.4.0" % Test classifier "tests"
